@@ -9,6 +9,18 @@
             "email": "alexgrao13@gmail.com"
         }
     ],
+    "autoload": {
+        "psr-4": {
+            "Alexgrao\\PackageAlmacen\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Alexgrao\\PackageAlmacen\\AlmacenServiceProvider"
+            ]
+        }
+    },
     "minimum-stability": "dev",
     "require": {}
 }

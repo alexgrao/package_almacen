@@ -25,10 +25,7 @@ class AlmacenServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->loadViewsFrom(__DIR__.'/views', 'calculator');
-
-        $this->publishes([
-            $this->publishes([__DIR__.'/views' => base_path('resources/views')], 'views');
-        ]);
+        $this->loadViewsFrom(__DIR__.'/../views', 'calculator');
+        $this->publishes(__DIR__.'/../views/vista.blade.php' => config_path('resources/views')]);
     }
 }

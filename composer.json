@@ -1,0 +1,14 @@
+{
+    "name": "alexgrao/package-almacen",
+    "description": "Primera prueba para package de almacen",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alejandro Lopez",
+            "email": "alexgrao13@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}

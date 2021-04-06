@@ -15,7 +15,6 @@ class AlmacenServiceProvider extends ServiceProvider
     {
         // register our controller
         $this->app->make('Alexgrao\PackageAlmacen\AlmacenController');
-        $this->loadViewsFrom(__DIR__.'/views', 'calculator'); 
 
     }
 
@@ -26,6 +25,11 @@ class AlmacenServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        include __DIR__.'/routes.php';
+        $this->loadViewsFrom(__DIR__.'/views', 'calculator'); 
+        $this->loadRoutesFrom(__DIR__.'/routes.php');
+
+        $this->publishes([
+            __DIR__.'/views' => resource_path('views/courier'),
+        ]);
     }
 }

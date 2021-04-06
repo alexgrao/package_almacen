@@ -9,6 +9,7 @@
             "email": "alexgrao13@gmail.com"
         }
     ],
+    
     "autoload": {
         "psr-4": {
             "Alexgrao\\PackageAlmacen\\": "src/"

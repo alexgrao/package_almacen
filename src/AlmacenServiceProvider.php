@@ -25,11 +25,10 @@ class AlmacenServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->loadRoutesFrom(__DIR__.'/../routes.php');
-        $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
-        $this->publishes([
-        __DIR__.'/../AlmacenController.php' => app_path('Http/Controllers')]);
-        $this->publishes([
-        __DIR__.'/../Models' => app_path('Http/Models')]);
+        $this->loadRoutesFrom(__DIR__.'/routes.php');
+        $this->loadMigrationsFrom(__DIR__.'/database/migrations');
+        $this->publishes([__DIR__.'/AlmacenController.php' => app_path('Http/Controllers')]);
+        $this->publishes([__DIR__.'/Models' => app_path('Http/Models')]);
+        //$this->publishes([__DIR__.'/../views/vista.blade.php' => config_path('resources/views')]);
     }
 }
